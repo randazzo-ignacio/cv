@@ -76,6 +76,8 @@
 %debug page outer frames
 %\usepackage{showframe}			
 
+%add support for hyperlinks with href
+\usepackage{hyperref}
 
 %define page styles using geometry
 \usepackage[a4paper]{geometry}		
@@ -300,8 +302,8 @@
 \begin{minipage}[c][0.085\textheight][t]{\linewidth}
 \begin{center}
 	\vspace{14pt}
-	\textcolor{light}{\small{Consultant and Software Engineer $\cdot$  Bremen, Germany  $\cdot$  info@jankuester.com  $\cdot$ +49 176 313 XXX XX}}\\
-	\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} }
+	\textcolor{light}{\small{Electronics Engineering, Computer Science, Cybersecurity $\cdot$ Argentina $\cdot$  \href{mailto:randazzoignacio@gmail.com}{randazzoignacio@gmail.com} }}\\
+	\HUGE{\textcolor{white}{\textsc{Ignacio Randazzo}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{CV}} }
 \end{center}
 \end{minipage}}\\[-4pt]
 %----------------------------------------------------------------------------------------
@@ -313,8 +315,7 @@
 \begin{center}
 \parbox[b]{0.75\linewidth}{
 	\begin{center}
-	\large
-	\larrow{bgcol}\larrow{bgcol} \textcolor{white}{I create awesome resume templates in LaTeX for everyone.} \rarrow{bgcol}\rarrow{bgcol}
+	\larrow{bgcol}\larrow{bgcol} \textcolor{white}{You can find the latest up to date version of this CV at \href{https://randazzo.ar/cv}{randazzo.ar/cv} } \rarrow{bgcol}\rarrow{bgcol}
 	\end{center}
 }
 \end{center}
@@ -333,11 +334,11 @@
   \end{tikzpicture}
 	\hspace{8pt}
 	\parbox[b]{5cm}{
-	\metasection{Status:}{PhD student, M.Sc. Digital Media, Fullstack JS Engineer}
-	\metasection{Fields:}{Software Development, Consulting, Education} 
-	\metasection{Stack:}{Meteor, Mongo, React, Bootstrap, Fontawesome ,Mocha}
-	\metasection{Tools:}{Git, Sourcetree, Travis, Webstorm, Terminal}
-	\metasection{Activities:}{Global Game Jam, Sound Engineering, Blender, Martial Arts}
+	\metasection{Status:}{Looking for work. Working on my thesis to graduate college.}
+	\metasection{Fields:}{Electronics, Computer Science, Cybersecurity}
+	\metasection{Langs:}{C, C++, Bash, Python, Ruby, Verilog, VHDL}
+	\metasection{Tools:}{Linux, Git, Ansible, Nginx, LaTeX, KiCAD}
+	\metasection{Activities:}{CTF's, Game Jams, Personal Projects}
 	}
 }
 \end{center}
@@ -351,29 +352,29 @@
 \hspace{26pt}
 \parbox[c]{0.75\linewidth}{
 %
-\cvevent{2016 - now}{Fullstack Javascript Engineer}{University of Bremen}{Invent a realtime classroom management using Meteor and React}{Design software architecture and leading development}
+\cvevent{2021 - 2023}{ASIC RTL Engineer}{Marvell Technology}{High speed coherent DSP digital design for ASIC.}{System-Verilog for design and C++ for simulation.}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2014 - 2016}{IT Consultant for IBM XPages and Notes Domino}{We4IT GmbH Bremen}{Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}{Integrated Camunda BPMN engine and BPMN.IO modeler in We4IT Aveedo}
+\cvevent{2020 - 2021}{Research assistant}{Fundación Fulgor}{Design, implementation and verification/testing in FPGA}{Real-time reconfigurable communication channel for DSP chips for emulation}
 
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2014}{Scientific Employee / Software Development}{University of Bremen}{Invented a flexible assessment framework, targeting industrial trainees}{Supervised software development lifecycle, Recruited team members}
+\cvevent{2017 - 2021}{Linux System Administration}{CIII UTN FRC}{My main responsibiltiy included setup, administration, and support of the center's Linux server}{Secondary part time projects I participated in included image analysis with OpenCV}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{Nov. 2011}{Project Management Simulation Training}{Getoq Consulting}{Performed a two-day project simulation from management perspective}{Topics included customer contracts, change management, controlling, operational tasks}
+\cvevent{2019}{Linux deployment, and security audit}{Consulting for DIUCCO}{Linux install and maintenance for an E-Voting machine}{Security audit reports, and improvement proposals, along with improvements implementation.}
 
 %\textcolor{softcol}{\hrule}
 
 
 %
-\cvevent{2010 - 2011}{Student Assistant / Programmer}{otulea.uni-bremen.de}{Realized an online diagnosis platform for workforce literacy development (Flex)}{Modeled software design, implemented various prototypes, conducted usability tests}
+\cvevent{2018}{Embedded Linux development}{Cordoba Hospital's Bioterum}{Installation and maintenance of embedded Linux for a smart scale}{Development of some C programs to interface the embedded Linux with some custom hardware}
 
 }
 \hspace{18pt}
@@ -390,8 +391,7 @@
 \begin{center}
 \parbox[b]{0.75\linewidth}{
 	\begin{center}
-	\large
-	\textcolor{white}{Check out my open source projects at - } \textcolor{sectcol}{\textbf{github.com/jankapunkt}}
+	\textcolor{sectcol}{\textbf{\textit{"... True rebels fight against all odds, true rebels never give up, yet they cannot triumph alone ..."}}}
 	\end{center}
 }
 \end{center}
@@ -406,22 +406,18 @@
 \parbox[c]{0.75\linewidth}{
 %\cvsection{Education}
 
-\cvevent{2015 / 07}{Graduated as M.Sc. Digital Media}{University of Bremen}{Master Thesis: Semi Automated Scoring in Technology Based Assessment}{Developed and evaluated an algorithm for semi automated scoring of spreadsheet data}
+\cvevent{2015 - 2025}{Electronics Engineering}{Universidad Tecnologica Nacional}{Expected thesis presentation and graduation: November 2025}{Grade Average: 8/10.}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2013}{Master Project - PrIMA}{University of Bremen}{Co-Invented a touch table application for medical support, co-developed software (Java) }{Formed a scrum team, mainted project dev server (Debian), surveyed target audience}
+\cvevent{2024}{Google Cybersecurity Certificate}{Google}{Badge: \href{https://www.credly.com/badges/8a242168-417a-4b6a-be9c-2b187e74cdda/public_url}{Google Cybersecurity Badge}}{Legal and regulatory parts of cybersecurity are covered in detail, practical subjects not so much}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2015}{Master Studies Digital Media}{University of Bremen}{Inter-cultural classes in English, covering special topics in computer science and design}{Professionalized in research methods, software development and e-assessment}
+\cvevent{2024}{Junior Cybersecurity Analyst}{Cisco}{Badge: \href{https://www.credly.com/badges/17851325-7634-4f93-b3e3-934d3620d040/public_url}{Junior Cybersecurity Analyst Badge}}{Cybersecurity Basics, quite broad topic coverage, but not much depth.}
 
-%\textcolor{softcol}{\hrule}
-
-%
-\cvevent{2009 - 2010}{Semester Abroad}{University of Melbourne}{Mastered six months of study and trans-cultural experience in Melbourne, Australia}{Finished machine programming, information visualization, professional essay writing}
 }
 \hspace{18pt}
 \textcolor{sectcol}{\rule[-3.2cm]{2pt}{7cm}}
@@ -448,7 +444,7 @@
 \begin{center}
 \parbox[b]{0.75\linewidth}{
 	\begin{center}
-	 \textcolor{white}{www.jankuester.com} \textcolor{white}{$\cdot$} \textcolor{white}{twitter.com/kuester\_jan}
+	 \textcolor{white}{\href{https://randazzo.ar}{randazzo.ar}} \textcolor{white}{$\cdot$} \textcolor{white}{\href{https://www.linkedin.com/in/randazzo-ignacio/}{Linkedin}}
 	\end{center}
 }
 \end{center}
