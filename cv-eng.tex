@@ -142,16 +142,16 @@
 \usepackage{color}
 
 %accent color
-\definecolor{sectcol}{RGB}{255,150,0}
+\definecolor{sectcol}{RGB}{175,89,153}
 
 %dark background color
-\definecolor{bgcol}{RGB}{110,110,110}
+\definecolor{bgcol}{RGB}{68,68,132}
 
 %light background / accent color
-\definecolor{softcol}{RGB}{225,225,225}
+\definecolor{softcol}{RGB}{231,171,180}
 
 % light bg
-\definecolor{light}{RGB}{210, 210, 210}
+\definecolor{light}{RGB}{169,171,210}
 
 %============================================================================%
 %
@@ -327,7 +327,10 @@
 \vspace{8pt}
 \begin{center}
 \parbox[c]{\innerwidth}{
-	\includegraphics[trim= 320 130 460 210,clip,width=0.2\linewidth]{myfoto.jpg}
+  \begin{tikzpicture}
+    \clip (0,0) circle(0.1\linewidth);
+    \node at (0,0) {\includegraphics[width=0.2\linewidth]{profile.jpg}};
+  \end{tikzpicture}
 	\hspace{8pt}
 	\parbox[b]{5cm}{
 	\metasection{Status:}{PhD student, M.Sc. Digital Media, Fullstack JS Engineer}
